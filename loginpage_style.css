@@ -1,0 +1,689 @@
+html {
+    font-family: sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    margin: 0;
+}
+
+footer,
+main,
+nav,
+section{
+    display: block;
+}
+
+a{
+    background: transparent;
+}
+
+a:active,
+a:hover{
+    outline: 0;
+}
+
+h1{
+    font-size: 2em;
+    margin: .67em 0;
+}
+
+img{
+    border: 0;
+}
+
+svg:not(:root){
+    overflow: hidden;
+}
+
+hr{
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    height: 0;
+}
+
+button,
+input,
+select,
+textarea{
+    color: inherit;
+    font: inherit;
+    margin: 0;
+}
+
+button{
+    overflow: visible;
+}
+
+button,
+select{
+    text-transform: none;
+}
+
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"]{
+    -webkit-appearance: button;
+    cursor: pointer;
+}
+
+button[disabled],
+html input[disabled]{
+    cursor: default;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner{
+    border: 0;
+    padding: 0;
+}
+
+input{
+    line-height: normal;
+}
+
+input[type="checkbox"],
+input[type="radio"]{
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+.select-container{
+    display: inline-block;
+    margin: 0 0 1.2em;
+    padding: 0;
+    position: relative;
+}
+
+.select-container select{
+    background: none;
+    border: 2px solid #EDEFF0;
+    position: auto;
+    height: 21%;
+    width: auto;
+    padding: .5em;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+}
+
+.select-container select::-ms-expand{
+    display: none;
+}
+
+.select-container select:focus{
+    background: none;
+}
+
+.select-container::after{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 6px;
+    background-image: url('https://d2k1ftgv7pobq7.cloudfront.net/meta/c/p/res/images/3a15a346421a08419648c0ca2f5e98b2/caret.svg');
+    width: 12px;
+    height: 12px;
+    padding: 6px;
+    -webkit-transform: translateY(-50%) rotate(90deg);
+    transform: translateY(-50%) rotate(90deg);
+}
+
+/*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
+html{
+    font-family: "jaf-facitweb", "Helvetica Neue", Arial, sans-serif;
+    color: #4d4d4d;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.44em;
+}
+
+hr{
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid hsl(0, 0%, 80%);
+    margin: 1em 0;
+    padding: 0;
+}
+
+img,
+svg{
+    vertical-align: middle;
+}
+
+h1{
+    font-size: 1.777em;
+    line-height: 1.2em;
+    margin-top: 1.6em;
+}
+
+a{
+    color: hsl(202, 40%, 55%);
+}
+
+a:hover{
+    color: hsl(202, 50%, 30%);
+}
+
+textarea,
+input{
+    display: block;
+    margin: 0 0 1.2em;
+}
+
+input[type="text"],
+input[type="email"]{
+    background: #EDEFF0;
+    border-radius: 4px;
+    border: 1px solid #CDD2D4;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: .5em;
+    max-width: 400px;
+    width: 100%;
+}
+
+input[type="text"]:hover,
+input[type="email"]:hover,
+input[type="password"]:hover,
+input[type="number"]:hover{
+    border-color: #B6BBBF;
+}
+
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus{
+    border-color: #A5ACB0;
+    outline: none;
+    box-shadow: 0 0 6px #CDD2D4;
+}
+
+textarea.error:focus,
+input[type="text"].error:focus,
+input[type="email"].error:focus,
+input[type="password"].error:focus,
+input[type="number"].error:focus{
+    box-shadow: 0 0 6px #EC9488;
+}
+
+input[type="button"]:focus,
+input[type="submit"]:focus{
+    outline: black dotted 1px;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0){
+input[type="button"]:focus,
+input[type="submit"]:focus{
+    outline: -webkit-focus-ring-color auto 5px;
+    }
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button{
+    -webkit-appearance: none;
+    appearance: none;
+    margin: 0;
+}
+
+.button{
+    background: #CDD2D4;
+    background: -webkit-gradient(linear, left top, left bottom, from(#CDD2D4), to(#C4C9CC));
+    background: linear-gradient(to bottom, #CDD2D4 0%, #C4C9CC 100%);
+    border-radius: .3em;
+    box-shadow: 0 2px 0 hsl(0, 0%, 30%);
+    color: hsl(0, 0%, 30%);
+    display: inline-block;
+    font-weight: bold;
+    margin-bottom: .8em;
+    padding: .6em 1.3em;
+    position: relative;
+    text-decoration: none;
+    border: 0px;
+}
+
+.button:not([disabled]):focus,
+.button:not([disabled]):hover{
+    background: #C4C9CC;
+    background: -webkit-gradient(linear, left top, left bottom, from(#C4C9CC), to(#B6BBBF));
+    background: linear-gradient(to bottom, #C4C9CC 0%, #B6BBBF 100%);
+    color: hsl(0, 0%, 30%);
+}
+
+.button:not([disabled]):active{
+    background: #B6BBBF;
+    background: -webkit-gradient(linear, left top, left bottom, from(#B6BBBF), to(#A5ACB0));
+    background: linear-gradient(to bottom, #B6BBBF 0%, #A5ACB0 100%);
+    color: hsl(0, 0%, 30%);
+}
+
+.button[disabled]{
+    background: #E2E4E6;
+    box-shadow: none;
+    color: hsl(0, 0%, 55%);
+    cursor: default;
+}
+
+.button-green{
+    background: #61BD4F;
+    background: -webkit-gradient(linear, left top, left bottom, from(#61BD4F), to(#5AAC44));
+    background: linear-gradient(to bottom, #61BD4F 0%, #5AAC44 100%);
+    box-shadow: 0 2px 0 #3F6F21;
+    color: #fff;
+}
+
+.button-green:not([disabled]):focus,
+.button-green:not([disabled]):hover{
+    background: #5AAC44;
+    background: -webkit-gradient(linear, left top, left bottom, from(#5AAC44), to(#519839));
+    background: linear-gradient(to bottom, #5AAC44 0%, #519839 100%);
+    color: #fff;
+}
+
+.button-green:not([disabled]):active{
+    background: #519839;
+    background: -webkit-gradient(linear, left top, left bottom, from(#519839), to(#49852E));
+    background: linear-gradient(to bottom, #519839 0%, #49852E 100%);
+    color: #fff;
+}
+
+section{
+    overflow: hidden;
+    padding: 0 1em;
+    word-wrap: break-word;
+}
+
+section img{
+    display: block;
+    margin: 1em auto;
+    max-width: 100%;
+}
+
+section h1:first-child,
+section h2:first-child,
+section h3:first-child,
+section h4:first-child,
+section h5:first-child,
+section h6:first-child{
+    margin-top: 1em;
+}
+
+.section-wrapper{
+    max-width: 540px;
+    margin: 0 auto;
+}
+
+footer{
+    font-size: .8em;
+    margin: 4em 1em;
+    text-align: center;
+}
+
+footer ul{
+    list-style: none;
+    margin: .5em 0 0;
+    padding: 0;
+}
+
+footer li{
+    display: inline-block;
+    margin: 0 .4em;
+}
+
+footer li a,
+footer li a:visited{
+    color: hsl(0, 0%, 60%);
+}
+
+.atlassian-logo-small{
+    width: 150px;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 1px;
+}
+
+.atlassian-logo-small.white{
+    display: none;
+ }
+
+@media only screen and (min-width:650px){
+    section{
+        padding: 2em 1em;
+    }
+}
+
+@media only screen and (min-width:900px){
+    html{
+        font-size: 20px;
+    }
+
+    section{
+        adding: 4em 1em;
+    }
+
+    section img{
+        max-width: initial;
+    }
+
+    .section-wrapper{
+        margin: 0 auto;
+        max-width: 1300px;
+    }
+
+    .layout{
+        display: block;
+        max-width: 585px;
+        margin: 0 auto;
+        position: relative;
+    }
+}
+
+.main{
+    background-color: #f9fafc;
+    font-family: '-apple-system', BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: space-between;
+    font-size: 14px;
+}
+
+.main .trello-main-logo{
+    display: block;
+    height: 43px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.main .inner-section{
+    width: 100%;
+    padding: 0px;
+    overflow: visible;
+    margin-bottom: 30px;
+}
+
+.main .inner-section .section-wrapper{
+    max-width: 400px;
+}
+
+.main .inner-section a{
+    text-decoration: none;
+    color: #0052cc;
+}
+
+.main .inner-section a:hover,
+.main .inner-section a:hover:visited{
+    color: #0052cc;
+    text-decoration: underline;
+}
+
+.main .inner-section .account-button{
+    margin-bottom: 0;
+    width: 100%;
+}
+
+.main .inner-section .account-form .login-method-separator{
+    text-align: center;
+    font-size: 12px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.main .inner-section .account-form {
+    background-color: #ffffff;
+    border-radius: 3px;
+    padding: 25px 40px;
+    box-shadow: rgb(0 0 0 / 10%) 0 0 10px;
+}
+
+.main .inner-section .account-form textarea,
+.main .inner-section .account-form input[type='text'],
+.main .inner-section .account-form input[type='submit'],
+.main .inner-section .account-form .select-container,
+.main .inner-section .account-form .select-container select{
+    width: 100%;
+}
+
+.main .inner-section .account-form .button-green{
+    box-shadow: none;
+}
+
+.main .inner-section .account-form .button-green:not(:disabled){
+    background: #5AAC44;
+}
+
+.main .inner-section .account-form .button-green:not(:disabled):hover{
+    background: #61BD4F;
+}
+
+.main .inner-section .account-form .logo-button{
+    background: #fff;
+    color: rgba(0, 0, 0, 0.54);
+    box-shadow: rgba(0, 0, 0, 0.2) 1px 1px 5px 0;
+    border-color: transparent;
+    text-align: center;
+    border-radius: 3px;
+    width: 99%;
+    height: 39px;
+    padding-top: 0;
+    margin-bottom: 12px;
+    display: block;
+    text-decoration: none;
+    -webkit-transition: background-color .2s ease-in-out 0s, border-color .2s ease-in-out 0s;
+    transition: background-color .2s ease-in-out 0s, border-color .2s ease-in-out 0s;
+}
+
+.main .inner-section .account-form .logo-button:hover{
+    background-color: #f9fafc;
+    text-decoration: none;
+}
+
+.main .inner-section .account-form .logo-button:active{
+    background: #eee;
+    border: 2px solid #CDD2D4;
+}
+
+.main .inner-section .account-form .logo-button span.label{
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 14px;
+    font-family: inherit;
+    font-weight: bold;
+    color: #505f79;
+    padding: 3px;
+    height: 32px;
+    line-height: 32px;
+}
+
+.main .inner-section .account-form .logo-button span.icon{
+    display: inline-block;
+    border-radius: 1px;
+    width: 18px;
+    height: 18px;
+    vertical-align: middle;
+}
+
+.main .inner-section .account-form #google-icon{
+        background: url('https://d2k1ftgv7pobq7.cloudfront.net/meta/c/p/res/images/8215f6659adc202403198fef903a447e/sign-in-with-google.svg') 0 50% no-repeat;
+}
+
+.main .inner-section .account-form #msft-icon{
+    background: url('https://d2k1ftgv7pobq7.cloudfront.net/meta/c/p/res/images/72ece804e5285ab6507e2406157cda3c/microsoft-logo.svg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    vertical-align: -5px;
+}
+
+.main .inner-section .account-form #apple-icon {
+    background: url('https://d2k1ftgv7pobq7.cloudfront.net/meta/c/p/res/images/6fc4ecf05a97cfb43cfcbb14738a5aa0/apple-logo-black.svg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    vertical-align: -3px;
+}
+
+.main .inner-section .account-form #slack-icon{
+    background: url('https://d2k1ftgv7pobq7.cloudfront.net/meta/c/p/res/images/267584bf90783090ede8f337d9baf909/slack-logo.svg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    vertical-align: -5px;
+}
+
+.main .inner-section .account-form .sso-login{
+    margin-top: -1px;
+    text-align: center;
+}
+
+.main .inner-section .bottom-link{
+    /* text-align: center; */
+    font-size: 14px;
+    display: block;
+}
+
+.main .inner-section .bottom-link.smaller-links {
+    font-size: 12px;
+
+}
+
+.main .inner-section .bottom-link li{
+    display: inline-block;
+    list-style: none;
+}
+
+.main .inner-section .bottom-link li:not(:first-child)::before{
+    content: '\2022';
+}
+
+.main .inner-section .form-field{
+    font-size: 14px;
+    text-indent:5px;
+    background-color: #fafbfc;
+    border: 2px solid #dfe1e6;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border-radius: 3px;
+    height: 40px;
+    -webkit-transition: background-color .2s ease-in-out 0s, border-color .2s ease-in-out 0s;
+    transition: background-color .2s ease-in-out 0s, border-color .2s ease-in-out 0s;
+}
+
+.main .inner-section .form-field:focus{
+    background-color: white;
+    border: 2px solid #4c9aff;
+    box-shadow: 0 0 0;
+}
+
+.main .inner-section h1{
+    text-align: center;
+    color: #5e6c84;
+    font-size: 16px;
+    letter-spacing: -0.01em;
+    line-height: 28px;
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+
+.main .inner-section hr{
+    margin-top: 19.5px;
+}
+
+.main .background{
+    z-index: -900;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+.main .background .rightLarge{
+    position: absolute;
+    width: 400px;
+    bottom: 0;
+    right: 0;
+    z-index: -999;
+    max-width: 30%;
+}
+
+.main .background .leftLarge{
+    position: absolute;
+    width: 400px;
+    bottom: 0;
+    left: 0;
+    z-index: -999;
+    max-width: 30%;
+}
+
+.main .main-footer{
+    margin-bottom: 24px;
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: 10px;
+}
+
+.main .main-footer a{
+    text-decoration: none;
+    color: #5e6c84;
+}
+
+.main .main-footer a:hover,
+.main .main-footer a:hover:visited{
+    text-decoration: underline;
+    color: #5e6c84;
+}
+
+.main .main-footer .select-container{
+    background-color: transparent;
+}
+
+.main .main-footer .select-container select{
+    color: #5e6c84;
+}
+
+.main .main-footer hr{
+    max-width: 400px;
+    margin: 25px auto;
+}
+
+.main .main-footer .atlassian-logo-small{
+    margin-bottom: 20px;
+}
+
+.main .main-footer .main-footer-list{
+    max-width: 45%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media only screen and (max-width:640px){
+    .main{
+        background-color: white;
+    }
+
+    .main .background{
+        display: none;
+    }
+
+    .main .trello-main-logo{
+        margin: 10px auto;
+    }
+
+    .main .inner-section .account-form{
+        border-color: transparent;
+        box-shadow: 0 0 0 transparent;
+        border-radius: 0;
+        padding-top: 10px;
+    }
+
+    .main .main-footer .main-footer-list{
+        max-width: none;
+    }
+}
